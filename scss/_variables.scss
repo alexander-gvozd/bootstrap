@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -380,6 +382,21 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+) !default;
+
+$spacers-advanced: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  // index is size in pixels
+  6: math.div($spacer, 16) * 10,
+  10: math.div($spacer, 16) * 10,
+  12: math.div($spacer, 16) * 12,
+  14: math.div($spacer, 16) * 12,
+  20: math.div($spacer, 16) * 12,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
