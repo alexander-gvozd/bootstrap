@@ -392,11 +392,11 @@ $spacers-advanced: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   // index is size in pixels
-  6: math.div($spacer, 16) * 10,
+  6: math.div($spacer, 16) * 6,
   10: math.div($spacer, 16) * 10,
   12: math.div($spacer, 16) * 12,
-  14: math.div($spacer, 16) * 12,
-  20: math.div($spacer, 16) * 12,
+  14: math.div($spacer, 16) * 14,
+  20: math.div($spacer, 16) * 20,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
