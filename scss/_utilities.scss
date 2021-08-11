@@ -156,6 +156,13 @@ $utilities: map-merge(
         50: 50%,
         75: 75%,
         100: 100%,
+      )
+    ),
+    "width_auto_responsive": (
+      property: width,
+      responsive: true,
+      class: w,
+      values: (
         auto: auto
       )
     ),
